@@ -16,3 +16,30 @@ b = {
 #dict
 
 print(b)
+
+
+
+
+
+list_1 = [
+    {"name": "Kanat", "last_name": "Erbolov", "age": 20},
+    {"name": "Askar", "last_name": "Paivich", "age": 15},
+    {"name": "Ali", "last_name": "Ryskeldi", "age": 45}
+]
+
+total_age = 0
+for person in list_1:
+    total_age += person["age"]
+    
+count = len(list_1)
+
+
+average_age = total_age / count
+
+print("Average age:",average_age)
+
+
+a = { "name": "Ali", "surname": "Ryskeldi"}
+b = a["surname"]
+a["middle_name"] = "Farabivich"
+print("a = ",a)
